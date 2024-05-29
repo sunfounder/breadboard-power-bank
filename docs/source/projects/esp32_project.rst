@@ -15,7 +15,8 @@
 Flowing Light with ESP32 
 ====================================================================
 
-This project utilizes the Raspberry Pi Pico W along with various modules to create a real-time distance measuring and alert system. By integrating an ultrasonic sensor, an I2C-connected LCD1602 display, and an active buzzer, the system continuously monitors and displays the current distance to objects and adjusts the buzzer's alarm frequency and duration based on the proximity of the object.
+In this project, we will create a flowing light effect using the ESP32 WROOM 32E along with an obstacle avoidance module and a WS2812 RGB LED strip. The setup includes 8 LEDs that change colors randomly and respond to obstacle detection by reversing the flow direction of the lights. The obstacle detection is handled by an infrared sensor connected to the ESP32, and the LED strip is controlled using the Adafruit NeoPixel library.
+
 
 
 **Required Components**
@@ -101,5 +102,3 @@ In this project, we need the following components.
             }
         }
     }
-
-This project is to display random colors on the LED strip. Additionally, an obstacle avoidance module has been included to dynamically change the direction of the running light.
