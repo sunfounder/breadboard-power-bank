@@ -1,47 +1,47 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    こんにちは、SunFounderのRaspberry Pi & Arduino & ESP32愛好家コミュニティへようこそ！Facebook上でRaspberry Pi、Arduino、ESP32についてもっと深く掘り下げ、他の愛好家と交流しましょう。
 
-    **Why Join?**
+    **参加する理由は？**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **エキスパートサポート**：コミュニティやチームの助けを借りて、販売後の問題や技術的な課題を解決します。
+    - **学び＆共有**：ヒントやチュートリアルを交換してスキルを向上させましょう。
+    - **独占的なプレビュー**：新製品の発表や先行プレビューに早期アクセスしましょう。
+    - **特別割引**：最新製品の独占割引をお楽しみください。
+    - **祭りのプロモーションとギフト**：ギフトや祝日のプロモーションに参加しましょう。
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 私たちと一緒に探索し、創造する準備はできていますか？[|link_sf_facebook|]をクリックして今すぐ参加しましょう！
 
-Reverse Parking Alarm System with Pico W
+リバースパーキングアラームシステム（Pico W使用）
 ====================================================================
 
-This project uses an I2C LCD1602, a buzzer and an ultrasonic module to create a reversing assist system. We can put it on a remote control car to simulate the the actual process of reversing a car into a garage.
+このプロジェクトでは、I2C LCD1602、ブザー、および超音波モジュールを使用して、バックアップ支援システムを構築します。これをリモコンカーに取り付けて、車庫へのバック駐車プロセスをシミュレーションすることができます。
 
 .. image:: img/picow_project.jpg
     :width: 600
     :align: center
 
-**Required Components**
+**必要なコンポーネント**
 
-In this project, we need the following components.
+本プロジェクトで必要なコンポーネントは以下の通りです。
 
 * Raspberry Pi Pico W
 * I2C LCD1602
-* Ultrasonic Module
-* 1k Resistor
-* S8050 NPN Transistor
-* Active Buzzer
+* 超音波モジュール
+* 1k レジスター
+* S8050 NPN トランジスタ
+* アクティブブザー
 * |link_breadvolt|
-* 800 Holes Breadboard
-* Jumper Wires
+* 800ホールズ・ブレッドボード
+* ジャンパーワイヤー
 
-**Wiring Diagram**
+**配線図**
 
 .. image:: img/picow_ultrasonic.png
     :width: 600
     :align: center
 
-**Code**
+**コード**
 
 .. code-block:: Python
 
@@ -123,13 +123,13 @@ In this project, we need the following components.
 
         time.sleep_ms(100)
 
-* As soon as the program runs, the ultrasonic sensor will continuously read the distance to the obstacle in front of you, and you will be able to see the exact distance value on the shell.
-* The LED and buzzer will change the frequency of blinking and beeping depending on the distance value, thus indicating the approach of the obstacle.
-* When the ultrasonic sensor works, the program will be paused. To avoid interfering with the LED or buzzer timing, we created a separate thread for ranging in this example.
+* プログラムが実行されると、超音波センサーが常に前方の障害物までの距離を読み取り、シェル上で正確な距離値を確認できます。
+* LEDとブザーは距離値に応じて点滅とビープ音の頻度を変え、障害物の接近を示します。
+* 超音波センサーが動作すると、プログラムが一時停止します。LEDやブザーのタイミングに干渉しないように、この例では測距用に別のスレッドを作成しました。
 
-**Library**
+**ライブラリ**
 
-Here you need to use the library called ``lcd1602.py``. You can create a new code in Thonny, copy the following code into it and then save it to your Raspberry Pi Pico W.
+ここでは ``lcd1602.py`` というライブラリを使用します。Thonnyで新しいコードを作成し、以下のコードをコピーしてRaspberry Pi Pico Wに保存してください。
 
 .. code-block:: Python
 

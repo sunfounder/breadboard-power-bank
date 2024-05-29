@@ -1,49 +1,50 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    こんにちは、SunFounderのRaspberry Pi & Arduino & ESP32愛好家コミュニティへようこそ！Facebook上でRaspberry Pi、Arduino、ESP32についてもっと深く掘り下げ、他の愛好家と交流しましょう。
 
-    **Why Join?**
+    **参加する理由は？**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **エキスパートサポート**：コミュニティやチームの助けを借りて、販売後の問題や技術的な課題を解決します。
+    - **学び＆共有**：ヒントやチュートリアルを交換してスキルを向上させましょう。
+    - **独占的なプレビュー**：新製品の発表や先行プレビューに早期アクセスしましょう。
+    - **特別割引**：最新製品の独占割引をお楽しみください。
+    - **祭りのプロモーションとギフト**：ギフトや祝日のプロモーションに参加しましょう。
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 私たちと一緒に探索し、創造する準備はできていますか？[|link_sf_facebook|]をクリックして今すぐ参加しましょう！
 
-Automatic Entrance System with Raspberry Pi
+ラズベリーパイを使用した自動入口システム
 ====================================================================
 
-In this project, we will use PIR to sense the movement of pedestrians, and use servos, LED, buzzer to simulate the work of the sensor door of the convenience store. When the pedestrian appears within the sensing range of the PIR, the indicator light will be on, the door will be opened, and the buzzer will play the opening bell.
+このプロジェクトでは、PIRを使用して歩行者の動きを感知し、サーボ、LED、ブザーを使用してコンビニのセンサードアの動作をシミュレートします。歩行者がPIRの感知範囲内に現れると、インジケーターライトが点灯し、ドアが開き、ブザーが開店のベルを鳴らします。
 
 .. image:: img/rpi_project.jpg
     :width: 600
     :align: center
 
-**Required Components**
+**必要なコンポーネント**
 
-In this project, we need the following components.
+このプロジェクトには、以下のコンポーネントが必要です。
 
 * Raspberry Pi
-* GPIO Extension Board
-* Resistor
+* GPIO拡張ボード
+* レジスター
 * LED
-* PIR Motion Sensor Module
-* Servo
-* Buzzer
-* Transistor
+* PIRモーションセンサーモジュール
+* サーボ
+* ブザー
+* トランジスタ
 * |link_breadvolt|
-* 800 Holes Breadboard
-* Jumper Wires
+* 800穴のブレッドボード
+* ジャンパーワイヤー
 
-**Wiring Diagram**
+**配線図**
 
 .. image:: img/rpi_welcome.png
     :width: 600
     :align: center
 
-**Code**
+
+**コード**
 
 .. code-block:: Python
 
@@ -127,4 +128,4 @@ In this project, we need the following components.
         buzPin.stop()
         ledPin.off()
 
-After the code runs, if the PIR sensor detects someone passing by, the door will automatically open (simulated by the servo), turn on the indicator and play the doorbell music. After the doorbell music plays, the system will automatically close the door and turn off the indicator light, waiting for the next time someone passes by.
+コードが実行されると、PIRセンサーが通行人を検出すると、ドアが自動的に開き（サーボでシミュレート）、インジケーターを点灯させ、ドアベルの音楽を再生します。ドアベルの音楽が鳴った後、システムは自動的にドアを閉じ、インジケーターライトを消し、次に誰かが通り過ぎるのを待ちます。

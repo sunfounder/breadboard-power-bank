@@ -1,45 +1,44 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    こんにちは、SunFounderのRaspberry Pi & Arduino & ESP32愛好家コミュニティへようこそ！Facebook上でRaspberry Pi、Arduino、ESP32についてもっと深く掘り下げ、他の愛好家と交流しましょう。
 
-    **Why Join?**
+    **参加する理由は？**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **エキスパートサポート**：コミュニティやチームの助けを借りて、販売後の問題や技術的な課題を解決します。
+    - **学び＆共有**：ヒントやチュートリアルを交換してスキルを向上させましょう。
+    - **独占的なプレビュー**：新製品の発表や先行プレビューに早期アクセスしましょう。
+    - **特別割引**：最新製品の独占割引をお楽しみください。
+    - **祭りのプロモーションとギフト**：ギフトや祝日のプロモーションに参加しましょう。
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 私たちと一緒に探索し、創造する準備はできていますか？[|link_sf_facebook|]をクリックして今すぐ参加しましょう！
 
 Flowing Light with ESP32 
 ====================================================================
 
-This project utilizes the Raspberry Pi Pico W along with various modules to create a real-time distance measuring and alert system. By integrating an ultrasonic sensor, an I2C-connected LCD1602 display, and an active buzzer, the system continuously monitors and displays the current distance to objects and adjusts the buzzer's alarm frequency and duration based on the proximity of the object.
+このプロジェクトでは、ESP32 WROOM 32Eと障害物回避モジュール、WS2812 RGB LEDストリップを使用して、流れる光の効果を作成します。セットアップには、ランダムに色が変わる8つのLEDが含まれており、障害物を検出すると光の流れの方向が反転します。障害物の検出はESP32に接続された赤外線センサーで行い、LEDストリップは ``Adafruit NeoPixel`` ライブラリを使用して制御します。
 
+**必要なコンポーネント**
 
-**Required Components**
-
-In this project, we need the following components.
+このプロジェクトでは、以下のコンポーネントが必要です。
 
 * ESP32 WROOM 32E
-* Obstacle Avoidance Module
-* WS2812 RGB 8 LEDs Strip
+* 障害物回避モジュール
+* WS2812 RGB 8 LEDs ストリップ
 * |link_breadvolt|
-* 400 Holes Breadboard
-* Jumper Wires
+* 400穴ブレッドボード
+* ジャンパーワイヤー
 
-**Wiring Diagram**
+**配線図**
 
 .. image:: img/esp32_flow_light.png
     :width: 600
     :align: center
 
-**Code**
+**コード**
 
 .. note::
 
-    The ``Adafruit NeoPixel`` library is used here, you can install it from the Library Manager.
+    ここでは ``Adafruit NeoPixel`` ライブラリを使用します。ライブラリマネージャからインストールできます。
 
 .. code-block:: Arduino
 
@@ -79,17 +78,17 @@ In this project, we need the following components.
 
         // If no obstacle is detected
         if (avoid_value) {
-        for (int i = 0; i < NUM_PIXELS; i++) {
-            // Turn on the current pixel with the random color
-            pixels.setPixelColor(i, color);
+            for (int i = 0; i < NUM_PIXELS; i++) {
+                // Turn on the current pixel with the random color
+                pixels.setPixelColor(i, color);
 
-            // Update the RGB LED strip display
-            pixels.show();
+                // Update the RGB LED strip display
+                pixels.show();
 
-            // Turn off the current pixel
-            pixels.setPixelColor(i, 0);
-            delay(100);
-        }
+                // Turn off the current pixel
+                pixels.setPixelColor(i, 0);
+                delay(100);
+            }
         }
         // If detects an obstacle, change the direction of the LED strip
         else {
@@ -101,5 +100,3 @@ In this project, we need the following components.
             }
         }
     }
-
-This project is to display random colors on the LED strip. Additionally, an obstacle avoidance module has been included to dynamically change the direction of the running light.

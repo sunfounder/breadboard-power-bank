@@ -1,55 +1,54 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    こんにちは、SunFounderのRaspberry Pi & Arduino & ESP32愛好家コミュニティへようこそ！Facebook上でRaspberry Pi、Arduino、ESP32についてもっと深く掘り下げ、他の愛好家と交流しましょう。
 
-    **Why Join?**
+    **参加する理由は？**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **エキスパートサポート**：コミュニティやチームの助けを借りて、販売後の問題や技術的な課題を解決します。
+    - **学び＆共有**：ヒントやチュートリアルを交換してスキルを向上させましょう。
+    - **独占的なプレビュー**：新製品の発表や先行プレビューに早期アクセスしましょう。
+    - **特別割引**：最新製品の独占割引をお楽しみください。
+    - **祭りのプロモーションとギフト**：ギフトや祝日のプロモーションに参加しましょう。
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 私たちと一緒に探索し、創造する準備はできていますか？[|link_sf_facebook|]をクリックして今すぐ参加しましょう！
 
-
-SunFounder |link_breadvolt| Breadboard Power Supply Module 
+SunFounder |link_breadvolt| ブレッドボード電源モジュール
 ===================================================================
 
-Thanks for choosing our |link_breadvolt|.
+私たちの|link_breadvolt|をお選びいただきありがとうございます。
 
 .. note::
-    This document is available in the following languages.
+    この文書は以下の言語で利用可能です。
 
         * |link_german_tutorials|
         * |link_jp_tutorials|
         * |link_en_tutorials|
     
-    Please click on the respective links to access the document in your preferred language.
+    各リンクをクリックして、ご希望の言語で文書にアクセスしてください。
 
-SunFounder |link_breadvolt|, your one-stop breadboard power solution. Compatible with Arduino, Raspberry Pi, ESP32, Pico W, and more, it provides 5V/1.5A and 3.3V/1A outputs for various electronic projects. With a built-in 3.7V 14500 lithium-ion battery (500mAh), you can work anytime, anywhere, even without power outlets. |link_breadvolt| ensures precise and stable power output with adjustable 5V and 3.3V via jumper caps. Its beginner-friendly interface includes an on/off switch and a compact design (52mm x 32mm x 24mm), making it easy to install and use. The versatile |link_breadvolt| features two independent channels and a USB (Type-A) output, perfect for IoT, robotics, and diverse projects.
+SunFounder |link_breadvolt| は、Arduino、Raspberry Pi、ESP32、Pico Wなどに対応する、あらゆる電子プロジェクトに5V/1.5Aおよび3.3V/1Aの出力を提供する、ワンストップのブレッドボード電源ソリューションです。内蔵の3.7V 14500リチウムイオンバッテリー（500mAh）を搭載しており、電源がない場所でもいつでも作業が可能です。 |link_breadvolt| は、ジャンパーキャップを介して5Vと3.3Vを調整することで、正確で安定した電源出力を保証します。初心者にも使いやすいインターフェイスには、オン/オフスイッチがあり、コンパクトな設計（52mm x 32mm x 24mm）で設置と使用が簡単です。用途の広い |link_breadvolt| には、2つの独立したチャンネルとUSB（タイプA）出力があり、IoT、ロボティクス、さまざまなプロジェクトに最適です。
 
 .. image:: img/plugin_breadboard2.png
     :width: 500
     :align: center
 
-**Features**
+**特徴**
 
-* **Battery**: 3.7V 14500 Li-ion battery, 500mAh
-* **Output**: 5V/1.5A, 3.3V/1A (adjustable via jumpers. 0V, 3.3V, and 5V configuration)
-* **Output**: USB (Type-A) 5V
-* **Charge Input**: USB Type-C, 5V
-* **Charging Current**: 500mA
-* **Shutdown Current**: < 0.5mA
-* **Lithium Battery Over-discharge Protection Voltage**: 2.4V
-* **Lithium Battery Overcharge Protection Voltage**: 4.28V
-* Onboard Charging Indicator (CHG)
-* Onboard Power Indicator (PWR)
-* ON-OFF Switch Available
-* **Dimension**: 52mm x 32mm x 24mm (L x W x H)
+* **バッテリー**: 3.7V 14500リチウムイオンバッテリー、500mAh
+* **出力**: 5V/1.5A、3.3V/1A（ジャンパーで調整可能。0V、3.3V、5Vの設定）
+* **出力**: USB（タイプA）5V
+* **充電入力**: USBタイプC、5V
+* **充電電流**: 500mA
+* **シャットダウン電流**: < 0.5mA
+* **リチウムバッテリー過放電保護電圧**: 2.4V
+* **リチウムバッテリー過充電保護電圧**: 4.28V
+* 充電インジケータ（CHG）搭載
+* 電源インジケータ（PWR）搭載
+* ON-OFFスイッチ付き
+* **寸法**: 52mm x 32mm x 24mm (L x W x H)
 
 
-**Contents**
+**目次**
 
 .. toctree::
     :maxdepth: 2
@@ -60,6 +59,6 @@ SunFounder |link_breadvolt|, your one-stop breadboard power solution. Compatible
     downloads
 
 
-**Copyright Notice**
+**著作権告知**
 
-All contents including but not limited to texts, images, and code in this manual are owned by the SunFounder Company. You should only use it for personal study,investigation, enjoyment, or other non-commercial or nonprofit purposes, under therelated regulations and copyrights laws, without infringing the legal rights of the author and relevant right holders. For any individual or organization that uses these for commercial profit without permission, the Company reserves the right to take legal action.
+このマニュアルに含まれるテキスト、画像、コードなどのすべてのコンテンツは、SunFounder社が所有しています。関連する規制と著作権法の下で、個人的な学習、調査、楽しみ、その他の商業的でない、または非営利的な目的のためにのみ使用してください。作者及び関連する権利保持者の法的権利を侵害せずに使用してください。許可なくこれらを商業的利益のために使用する個人または組織に対しては、会社は法的措置を取る権利を留保します。

@@ -1,45 +1,44 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    こんにちは、SunFounderのRaspberry Pi & Arduino & ESP32愛好家コミュニティへようこそ！Facebook上でRaspberry Pi、Arduino、ESP32についてもっと深く掘り下げ、他の愛好家と交流しましょう。
 
-    **Why Join?**
+    **参加する理由は？**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **エキスパートサポート**：コミュニティやチームの助けを借りて、販売後の問題や技術的な課題を解決します。
+    - **学び＆共有**：ヒントやチュートリアルを交換してスキルを向上させましょう。
+    - **独占的なプレビュー**：新製品の発表や先行プレビューに早期アクセスしましょう。
+    - **特別割引**：最新製品の独占割引をお楽しみください。
+    - **祭りのプロモーションとギフト**：ギフトや祝日のプロモーションに参加しましょう。
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 私たちと一緒に探索し、創造する準備はできていますか？[|link_sf_facebook|]をクリックして今すぐ参加しましょう！
 
-Hardware Introductions
+ハードウェア紹介
 ==============================
 
-**Features**
+**特長**
 
-* **Battery**: 3.7V 14500 Li-ion battery, 500mAh
-* **Output**: 5V/1.5A, 3.3V/1A (adjustable via jumpers. 0V, 3.3V, and 5V configuration)
-* **Output**: USB (Type-A) 5V
-* **Charge Input**: USB Type-C, 5V
-* **Charging Current**: 500mA
-* **Shutdown Current**: < 0.5mA
-* **Lithium Battery Over-discharge Protection Voltage**: 2.4V
-* **Lithium Battery Overcharge Protection Voltage**: 4.28V
-* Onboard Charging Indicator (CHG)
-* Onboard Power Indicator (PWR)
-* ON-OFF Switch Available
-* **Dimension**: 52mm x 32mm x 24mm (L x W x H)
+* **バッテリー**: 3.7V 14500リチウムイオンバッテリー、500mAh
+* **出力**: 5V/1.5A、3.3V/1A（ジャンパーで調整可能。0V、3.3V、5V設定）
+* **出力**: USB（タイプA）5V
+* **充電入力**: USBタイプC、5V
+* **充電電流**: 500mA
+* **シャットダウン電流**: < 0.5mA
+* **リチウムバッテリー過放電保護電圧**: 2.4V
+* **リチウムバッテリー過充電保護電圧**: 4.28V
+* 充電インジケータ（CHG）搭載
+* 電源インジケータ（PWR）搭載
+* ON-OFFスイッチ付き
+* **寸法**: 52mm x 32mm x 24mm (L x W x H)
 
-**Pinout**
+**ピンアウト**
 
 .. image:: img/power_bank_pinout.png
     :width: 500
     :align: center
 
+**ブレッドボードへの挿入**
 
-**Inserting into Breadboard**
-
-The module is directly installed at one end of the breadboard. The four 2-pin headers on the back of the module are used for the breadboard's power pathway. It is recommended that the negative side be inserted into the corresponding holes of the blue/black line of the breadboard.
+モジュールはブレッドボードの一端に直接設置されます。モジュール背面の4つの2ピンヘッダーは、ブレッドボードの電源経路用です。ブルー/ブラックラインの対応する穴にマイナス側を挿入することを推奨します。
 
 .. image:: img/plugin_breadboard2.png
     :width: 400
@@ -49,38 +48,38 @@ The module is directly installed at one end of the breadboard. The four 2-pin he
     :width: 400
     :align: center
 
-**Power Switch**
+**電源スイッチ**
 
-Toggle the switch to the **ON** position to turn on the board switch. The **PWR** green light will light up, and at this time the USB Type A port outputs 5V. The power sources of the two pathways on the breadboard are selected via jumper caps.
+スイッチを **ON** 位置に切り替えると、ボードのスイッチがオンになります。 **PWR** の緑色ライトが点灯し、このときUSBタイプAポートから5Vが出力されます。ブレッドボードの2つの経路の電源はジャンパーキャップを介して選択されます。
 
 .. image:: img/power_switch.png
     :width: 500
     :align: center
 
+**3V3/5Vピンヘッダー出力**
 
-**3V3/5V Pin Headers Output**
-
-The J2 and J3 headers on the board control the switching and voltage selection of the power pathways on each side using jumper caps. Placing the jumper cap on the middle 2Pin (OFF) disconnects the output, which can be seen as the LEDs on both pathways will turn off. Moving the jumper cap to the 3V3 or 5V sections controls the output of 3.3V or 5V respectively.
+ボード上のJ2とJ3ヘッダーは、ジャンパーキャップを使って各側の電源経路の切替と電圧選択を制御します。ジャンパーキャップを中央の2Pin（OFF）に置くと出力が遮断され、両経路のLEDが消灯するのが確認できます。ジャンパーキャップを3V3または5Vセクションに移動させると、それぞれ3.3Vまたは5Vの出力を制御します。
 
 .. image:: img/select_power.png
     :width: 500
     :align: center
 
-**Power Pathways**
+**電源経路**
 
-The USB Type C input is partially used for charging and partially outputs directly to USB Type A, the 5V pin output, and the input of the 3.3V linear regulator.
+USBタイプC入力は一部が充電用、一部がUSBタイプA、5Vピン出力、および3.3Vリニアレギュレータの入力に直接出力されます。
 
-**Charging**
+**充電**
 
-When a 5V power source is plugged into the USB Type C port, it can charge the battery, and the **CHG** red light will light up to indicate charging, going off when fully charged.
+USBタイプCポートに5V電源が接続されると、バッテリーが充電され、 **CHG** の赤色ライトが点灯して充電中であることを示します。完全に充電されると消灯します。
 
 .. image:: img/power_charge.png
     :width: 500
     :align: center
 
-**Battery Protection**
+**バッテリー保護**
 
-* **Over-discharge Protection**: When the battery voltage drops below 2.4V, battery protection activates, and the battery will no longer discharge. Inserting the charger and charging above 3.0V deactivates the over-discharge protection.
-* **Overcharge Protection**: When the total battery voltage reaches 4.28V, charging stops. The voltage dropping to 4.08V deactivates the overcharge protection.
-* **Overcurrent Protection**: Overcurrent protection is around 3.75A.
-* **Short Circuit Protection**: Short circuit protection is around 32A.
+* **過放電保護**: バッテリー電圧が2.4V以下に下がると、バッテリー保護が作動し、バッテリーは放電されなくなります。充電器を差し込み、3.0V以上に充電すると過放電保護が解除されます。
+* **過充電保護**: バッテリーの総電圧が4.28Vに達すると充電が停止します。電圧が4.08Vに下がると過充電保護が解除されます。
+* **過電流保護**: 約3.75Aで過電流保護が作動します。
+* **ショートサーキット保護**: 約32Aでショートサーキット保護が作動します。
+

@@ -1,50 +1,46 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    こんにちは、SunFounderのRaspberry Pi & Arduino & ESP32愛好家コミュニティへようこそ！Facebook上でRaspberry Pi、Arduino、ESP32についてもっと深く掘り下げ、他の愛好家と交流しましょう。
 
-    **Why Join?**
+    **参加する理由は？**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **エキスパートサポート**：コミュニティやチームの助けを借りて、販売後の問題や技術的な課題を解決します。
+    - **学び＆共有**：ヒントやチュートリアルを交換してスキルを向上させましょう。
+    - **独占的なプレビュー**：新製品の発表や先行プレビューに早期アクセスしましょう。
+    - **特別割引**：最新製品の独占割引をお楽しみください。
+    - **祭りのプロモーションとギフト**：ギフトや祝日のプロモーションに参加しましょう。
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 私たちと一緒に探索し、創造する準備はできていますか？[|link_sf_facebook|]をクリックして今すぐ参加しましょう！
 
-Environmental Monitoring System with Arduino
+環境モニタリングシステム（Arduino使用）
 ====================================================================
 
-This project demonstrates how to create a simple yet effective monitoring system using an Arduino Uno R4 Minima, a DHT11 temperature and humidity sensor, a photoresistor, and an I2C LCD1602 display. The system reads the temperature and light intensity and displays the values on the LCD screen, making it a practical project for learning about sensor integration and I2C communication in embedded systems.
+このプロジェクトでは、Arduino Uno R4 Minima、DHT11温湿度センサー、フォトレジスター、およびI2C LCD1602ディスプレイを使用して、シンプルで効果的なモニタリングシステムを作成する方法を示します。このシステムは、温度と光の強さを読み取り、LCD画面にこれらの値を表示するため、組み込みシステムにおけるセンサー統合とI2C通信について学ぶのに実用的なプロジェクトです。
 
 .. image:: img/r4_project.jpg
     :width: 600
     :align: center
 
-**Required Components**
+**必要なコンポーネント**
 
-In this project, we need the following components.
+このプロジェクトには、以下のコンポーネントが必要です。
 
 * Arduino Uno R4 Minima
 * I2C LCD1602
-* DHT11 Humiture Sensor
-* Photoresistor
-* 10k Resistor
+* DHT11 温湿度センサー
+* フォトレジスター
+* 10k レジスター
 * |link_breadvolt|
-* 400 Holes Breadboard
-* Jumper Wires
+* 400ホールズ・ブレッドボード
+* ジャンパーワイヤー
 
-**Wiring Diagram**
+**配線図**
 
-.. image:: img/r4_circuit.png
-    :width: 600
-    :align: center
-
-**Code**
+**コード**
 
 .. note::
 
-    The ``LiquidCrystal I2C`` and ``DHT sensor library`` libraries are used here, you can install them from the **Library Manager**.
+    ここでは ``LiquidCrystal I2C`` と ``DHT sensor library`` を使用しています。これらは **ライブラリマネージャー** からインストールできます。
 
 .. code-block:: Arduino
 
