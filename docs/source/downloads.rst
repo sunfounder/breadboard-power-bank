@@ -12,17 +12,20 @@
 
     👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
 
-Some Projects
-==============
+Downloads
+===============
 
-In this chapter, we explore various projects that utilize the |link_breadvolt| to power different types of mainboards. Each project highlights a unique application and showcases the versatility and functionality of the |link_breadvolt| in different scenarios. 
+**Chip Datasheets**
+
+* :download:`8205A_UMW </_static/pdf/8205A_UMW.PDF>`
+* :download:`AMS1117 </_static/pdf/AMS1117.pdf>`
+* :download:`AO3400 </_static/pdf/AO3400.PDF>`
+* :download:`AP2004 </_static/pdf/AP2004.pdf>`
+* :download:`DW01 </_static/pdf/DW01.PDF>`
+* :download:`LTH7R-J </_static/pdf/LTH7R-J.PDF>`
+
+**Schematic and PCB Diagram**
 
 
-.. toctree::
-    :maxdepth: 2
+* :download:`BreadVolt Schematic and PCB Files </_static/pdf/BreadVolt Schematic and PCB.zip>`
 
-    r4_project
-    esp32_project
-    picow_project
-    rpi_project
-   

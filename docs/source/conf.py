@@ -19,7 +19,7 @@
 import sphinx_rtd_theme
 import time
 
-project = 'SunFounder Breadboard Power Bank'
+project = 'SunFounder BreadVolt'
 copyright = f'{time.localtime().tm_year}, SunFounder'
 author = 'www.sunfounder.com'
 
@@ -105,9 +105,9 @@ rst_epilog = """
     <a href="https://docs.sunfounder.com/projects/breadboard-power-bank/en/latest/" target="_blank">English Online-tutorials</a>
 
 
-.. |link_breadboard_power_bank| raw:: html
+.. |link_breadvolt| raw:: html
 
-    <a href="https://www.sunfounder.com/products/sunfounder-breadvolt-breadboard-power-supply-module" target="_blank">Breadboard Power Bank</a>
+    <a href="https://www.sunfounder.com/products/sunfounder-breadvolt-breadboard-power-supply-module" target="_blank">BreadVolt</a>
     
 
 """

@@ -1,8 +1,22 @@
+.. note::
 
-SunFounder |link_breadboard_power_bank|
-=========================================
+    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
 
-Thanks for choosing our |link_breadboard_power_bank|.
+    **Why Join?**
+
+    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
+    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
+    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
+    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
+    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+
+    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+
+
+SunFounder |link_breadvolt| Breadboard Power Supply Module 
+===================================================================
+
+Thanks for choosing our |link_breadvolt|.
 
 .. note::
     This document is available in the following languages.
@@ -13,7 +27,7 @@ Thanks for choosing our |link_breadboard_power_bank|.
     
     Please click on the respective links to access the document in your preferred language.
 
-SunFounder |link_breadboard_power_bank|, your one-stop breadboard power solution. Compatible with Arduino, Raspberry Pi, ESP32, Pico W, and more, it provides 5V/1.5A and 3.3V/1A outputs for various electronic projects. With a built-in 3.7V 14500 lithium-ion battery (500mAh), you can work anytime, anywhere, even without power outlets. |link_breadboard_power_bank| ensures precise and stable power output with adjustable 5V and 3.3V via jumper caps. Its beginner-friendly interface includes an on/off switch and a compact design (52mm x 32mm x 24mm), making it easy to install and use. The versatile |link_breadboard_power_bank| features two independent channels and a USB (Type-A) output, perfect for IoT, robotics, and diverse projects.
+SunFounder |link_breadvolt|, your one-stop breadboard power solution. Compatible with Arduino, Raspberry Pi, ESP32, Pico W, and more, it provides 5V/1.5A and 3.3V/1A outputs for various electronic projects. With a built-in 3.7V 14500 lithium-ion battery (500mAh), you can work anytime, anywhere, even without power outlets. |link_breadvolt| ensures precise and stable power output with adjustable 5V and 3.3V via jumper caps. Its beginner-friendly interface includes an on/off switch and a compact design (52mm x 32mm x 24mm), making it easy to install and use. The versatile |link_breadvolt| features two independent channels and a USB (Type-A) output, perfect for IoT, robotics, and diverse projects.
 
 .. image:: img/plugin_breadboard2.png
     :width: 500
@@ -43,6 +57,7 @@ SunFounder |link_breadboard_power_bank|, your one-stop breadboard power solution
     About this Kit <self>
     hardware_introduction
     projects/projects
+    downloads
 
 
 **Copyright Notice**
