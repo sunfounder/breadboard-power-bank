@@ -80,17 +80,17 @@ In this project, we need the following components.
 
         // If no obstacle is detected
         if (avoid_value) {
-        for (int i = 0; i < NUM_PIXELS; i++) {
-            // Turn on the current pixel with the random color
-            pixels.setPixelColor(i, color);
+            for (int i = 0; i < NUM_PIXELS; i++) {
+                // Turn on the current pixel with the random color
+                pixels.setPixelColor(i, color);
 
-            // Update the RGB LED strip display
-            pixels.show();
+                // Update the RGB LED strip display
+                pixels.show();
 
-            // Turn off the current pixel
-            pixels.setPixelColor(i, 0);
-            delay(100);
-        }
+                // Turn off the current pixel
+                pixels.setPixelColor(i, 0);
+                delay(100);
+            }
         }
         // If detects an obstacle, change the direction of the LED strip
         else {
