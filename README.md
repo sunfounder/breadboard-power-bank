@@ -16,10 +16,9 @@ Quick Links:
 One-Stop Breadboard Power Solution" - BreadVolt Compatible with Arduino, Raspberry Pi, ESP32, Pico W, etc. BreadVolt offers 5V/1.5A and 3.3V/1A power outputs, suitable for a variety of electronic projects.
 
 
-
 <a id="update"></a>
 ## Update:
-2024-05-28:
+2024-05-29:
 - First release
 
 <a id="trouble"></a>

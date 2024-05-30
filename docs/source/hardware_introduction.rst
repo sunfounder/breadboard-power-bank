@@ -1,45 +1,44 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    Hallo und willkommen in der SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasten-Gemeinschaft auf Facebook! Tauchen Sie tiefer ein in die Welt von Raspberry Pi, Arduino und ESP32 mit anderen Enthusiasten.
 
-    **Why Join?**
+    **Warum beitreten?**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **Expertenunterstützung**: Lösen Sie Nachverkaufsprobleme und technische Herausforderungen mit Hilfe unserer Gemeinschaft und unseres Teams.
+    - **Lernen & Teilen**: Tauschen Sie Tipps und Anleitungen aus, um Ihre Fähigkeiten zu verbessern.
+    - **Exklusive Vorschauen**: Erhalten Sie frühzeitigen Zugang zu neuen Produktankündigungen und exklusiven Einblicken.
+    - **Spezialrabatte**: Genießen Sie exklusive Rabatte auf unsere neuesten Produkte.
+    - **Festliche Aktionen und Gewinnspiele**: Nehmen Sie an Gewinnspielen und Feiertagsaktionen teil.
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 Sind Sie bereit, mit uns zu erkunden und zu erschaffen? Klicken Sie auf [|link_sf_facebook|] und treten Sie heute bei!
 
-Hardware Introductions
+Hardware-Einführungen
 ==============================
 
-**Features**
+**Eigenschaften**
 
-* **Battery**: 3.7V 14500 Li-ion battery, 500mAh
-* **Output**: 5V/1.5A, 3.3V/1A (adjustable via jumpers. 0V, 3.3V, and 5V configuration)
-* **Output**: USB (Type-A) 5V
-* **Charge Input**: USB Type-C, 5V
-* **Charging Current**: 500mA
-* **Shutdown Current**: < 0.5mA
-* **Lithium Battery Over-discharge Protection Voltage**: 2.4V
-* **Lithium Battery Overcharge Protection Voltage**: 4.28V
-* Onboard Charging Indicator (CHG)
-* Onboard Power Indicator (PWR)
-* ON-OFF Switch Available
-* **Dimension**: 52mm x 32mm x 24mm (L x W x H)
+* **Batterie**: 3,7V 14500 Li-Ionen-Batterie, 500mAh
+* **Ausgang**: 5V/1,5A, 3,3V/1A (einstellbar über Jumper. 0V, 3,3V und 5V Konfiguration)
+* **Ausgang**: USB (Typ-A) 5V
+* **Ladeeingang**: USB Typ-C, 5V
+* **Ladestrom**: 500mA
+* **Abschaltstrom**: < 0.5mA
+* **Schutzspannung bei Überentladung der Lithium-Batterie**: 2.4V
+* **Schutzspannung bei Überladung der Lithium-Batterie**: 4.28V
+* Integrierte Ladeanzeige (CHG)
+* Integrierte Stromanzeige (PWR)
+* Ein-/Ausschalter verfügbar
+* **Abmessungen**: 52mm x 32mm x 24mm (L x B x H)
 
-**Pinout**
+**Pinbelegung**
 
 .. image:: img/power_bank_pinout.png
     :width: 500
     :align: center
 
+**Einsetzen in das Steckbrett**
 
-**Inserting into Breadboard**
-
-The module is directly installed at one end of the breadboard. The four 2-pin headers on the back of the module are used for the breadboard's power pathway. It is recommended that the negative side be inserted into the corresponding holes of the blue/black line of the breadboard.
+Das Modul wird direkt an einem Ende des Steckbretts installiert. Die vier 2-poligen Header auf der Rückseite des Moduls werden für die Stromversorgung des Steckbretts verwendet. Es wird empfohlen, die negative Seite in die entsprechenden Löcher der blauen/schwarzen Linie des Steckbretts einzustecken.
 
 .. image:: img/plugin_breadboard2.png
     :width: 400
@@ -49,38 +48,37 @@ The module is directly installed at one end of the breadboard. The four 2-pin he
     :width: 400
     :align: center
 
-**Power Switch**
+**Netzschalter**
 
-Toggle the switch to the **ON** position to turn on the board switch. The **PWR** green light will light up, and at this time the USB Type A port outputs 5V. The power sources of the two pathways on the breadboard are selected via jumper caps.
+Schalten Sie den Schalter in die **ON**-Position, um den Bordschalter einzuschalten. Die grüne **PWR**-Leuchte leuchtet auf, und zu diesem Zeitpunkt gibt der USB-Typ-A-Anschluss 5V aus. Die Stromquellen der beiden Wege auf dem Steckbrett werden über Jumper-Kappen ausgewählt.
 
 .. image:: img/power_switch.png
     :width: 500
     :align: center
 
+**3V3/5V Pin Header-Ausgang**
 
-**3V3/5V Pin Headers Output**
-
-The J2 and J3 headers on the board control the switching and voltage selection of the power pathways on each side using jumper caps. Placing the jumper cap on the middle 2Pin (OFF) disconnects the output, which can be seen as the LEDs on both pathways will turn off. Moving the jumper cap to the 3V3 or 5V sections controls the output of 3.3V or 5V respectively.
+Die J2- und J3-Header auf der Platine steuern das Umschalten und die Spannungsauswahl der Strompfade auf jeder Seite mittels Jumper-Kappen. Das Platzieren der Jumper-Kappe auf dem mittleren 2Pin (OFF) trennt den Ausgang, was daran zu erkennen ist, dass die LEDs auf beiden Wegen erlöschen. Das Verschieben der Jumper-Kappe auf die 3V3- oder 5V-Abschnitte steuert die Ausgabe von 3,3V oder 5V.
 
 .. image:: img/select_power.png
     :width: 500
     :align: center
 
-**Power Pathways**
+**Stromwege**
 
-The USB Type C input is partially used for charging and partially outputs directly to USB Type A, the 5V pin output, and the input of the 3.3V linear regulator.
+Der USB-Typ-C-Eingang wird teilweise zum Laden und teilweise zur direkten Ausgabe an USB-Typ-A, den 5V-Pin-Ausgang und den Eingang des 3,3V-Linearschaltreglers verwendet.
 
-**Charging**
+**Laden**
 
-When a 5V power source is plugged into the USB Type C port, it can charge the battery, and the **CHG** red light will light up to indicate charging, going off when fully charged.
+Wenn eine 5V-Stromquelle an den USB-Typ-C-Anschluss angeschlossen wird, kann sie die Batterie laden, und die rote **CHG**-Leuchte leuchtet auf, um das Laden anzuzeigen. Sie erlischt, wenn der Ladevorgang abgeschlossen ist.
 
 .. image:: img/power_charge.png
     :width: 500
     :align: center
 
-**Battery Protection**
+**Batterieschutz**
 
-* **Over-discharge Protection**: When the battery voltage drops below 2.4V, battery protection activates, and the battery will no longer discharge. Inserting the charger and charging above 3.0V deactivates the over-discharge protection.
-* **Overcharge Protection**: When the total battery voltage reaches 4.28V, charging stops. The voltage dropping to 4.08V deactivates the overcharge protection.
-* **Overcurrent Protection**: Overcurrent protection is around 3.75A.
-* **Short Circuit Protection**: Short circuit protection is around 32A.
+* **Überentladungsschutz**: Wenn die Batteriespannung unter 2,4V fällt, wird der Batterieschutz aktiviert, und die Batterie entlädt sich nicht mehr. Durch Anschließen des Ladegeräts und Laden über 3,0V wird der Überentladungsschutz deaktiviert.
+* **Überladeschutz**: Wenn die Gesamts Batteriespannung 4,28V erreicht, stoppt der Ladevorgang. Das Absinken der Spannung auf 4,08V deaktiviert den Überladeschutz.
+* **Überstromschutz**: Der Überstromschutz liegt bei etwa 3,75A.
+* **Kurzschlussschutz**: Der Kurzschlussschutz liegt bei etwa 32A.

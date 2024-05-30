@@ -1,36 +1,35 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    Hallo und willkommen in der SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasten-Gemeinschaft auf Facebook! Tauchen Sie tiefer ein in die Welt von Raspberry Pi, Arduino und ESP32 mit anderen Enthusiasten.
 
-    **Why Join?**
+    **Warum beitreten?**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **Expertenunterstützung**: Lösen Sie Nachverkaufsprobleme und technische Herausforderungen mit Hilfe unserer Gemeinschaft und unseres Teams.
+    - **Lernen & Teilen**: Tauschen Sie Tipps und Anleitungen aus, um Ihre Fähigkeiten zu verbessern.
+    - **Exklusive Vorschauen**: Erhalten Sie frühzeitigen Zugang zu neuen Produktankündigungen und exklusiven Einblicken.
+    - **Spezialrabatte**: Genießen Sie exklusive Rabatte auf unsere neuesten Produkte.
+    - **Festliche Aktionen und Gewinnspiele**: Nehmen Sie an Gewinnspielen und Feiertagsaktionen teil.
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 Sind Sie bereit, mit uns zu erkunden und zu erschaffen? Klicken Sie auf [|link_sf_facebook|] und treten Sie heute bei!
 
-Flowing Light with ESP32 
+
+Fließendes Licht mit ESP32
 ====================================================================
 
-In this project, we will create a flowing light effect using the ESP32 WROOM 32E along with an obstacle avoidance module and a WS2812 RGB LED strip. The setup includes 8 LEDs that change colors randomly and respond to obstacle detection by reversing the flow direction of the lights. The obstacle detection is handled by an infrared sensor connected to the ESP32, and the LED strip is controlled using the Adafruit NeoPixel library.
+In diesem Projekt werden wir einen fließenden Lichteffekt mit dem ESP32 WROOM 32E zusammen mit einem Hindernisvermeidungsmodul und einem WS2812 RGB LED-Streifen erstellen. Die Konfiguration umfasst 8 LEDs, die zufällig ihre Farben ändern und auf die Hinderniserkennung reagieren, indem sie die Fließrichtung der Lichter umkehren. Die Hinderniserkennung wird von einem Infrarotsensor übernommen, der mit dem ESP32 verbunden ist, und der LED-Streifen wird mit der Adafruit NeoPixel-Bibliothek gesteuert.
 
+**Benötigte Komponenten**
 
-
-**Required Components**
-
-In this project, we need the following components.
+Für dieses Projekt benötigen wir folgende Komponenten:
 
 * ESP32 WROOM 32E
-* Obstacle Avoidance Module
-* WS2812 RGB 8 LEDs Strip
+* Hindernisvermeidungsmodul
+* WS2812 RGB 8 LEDs Streifen
 * |link_breadvolt|
-* 400 Holes Breadboard
-* Jumper Wires
+* 400 Löcher Breadboard
+* Jumperkabel
 
-**Wiring Diagram**
+**Schaltplan**
 
 .. image:: img/esp32_flow_light.png
     :width: 600
@@ -40,7 +39,8 @@ In this project, we need the following components.
 
 .. note::
 
-    The ``Adafruit NeoPixel`` library is used here, you can install it from the Library Manager.
+    Hier wird die ``Adafruit NeoPixel``-Bibliothek verwendet, die Sie über den Bibliotheks-Manager installieren können.
+
 
 .. code-block:: Arduino
 

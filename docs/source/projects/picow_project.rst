@@ -1,41 +1,41 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    Hallo und willkommen in der SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasten-Gemeinschaft auf Facebook! Tauchen Sie tiefer ein in die Welt von Raspberry Pi, Arduino und ESP32 mit anderen Enthusiasten.
 
-    **Why Join?**
+    **Warum beitreten?**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **Expertenunterstützung**: Lösen Sie Nachverkaufsprobleme und technische Herausforderungen mit Hilfe unserer Gemeinschaft und unseres Teams.
+    - **Lernen & Teilen**: Tauschen Sie Tipps und Anleitungen aus, um Ihre Fähigkeiten zu verbessern.
+    - **Exklusive Vorschauen**: Erhalten Sie frühzeitigen Zugang zu neuen Produktankündigungen und exklusiven Einblicken.
+    - **Spezialrabatte**: Genießen Sie exklusive Rabatte auf unsere neuesten Produkte.
+    - **Festliche Aktionen und Gewinnspiele**: Nehmen Sie an Gewinnspielen und Feiertagsaktionen teil.
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 Sind Sie bereit, mit uns zu erkunden und zu erschaffen? Klicken Sie auf [|link_sf_facebook|] und treten Sie heute bei!
 
-Reverse Parking Alarm System with Pico W
+Rückwärts-Parkwarnsystem mit Pico W
 ====================================================================
 
-This project uses an I2C LCD1602, a buzzer and an ultrasonic module to create a reversing assist system. We can put it on a remote control car to simulate the the actual process of reversing a car into a garage.
+Dieses Projekt verwendet ein I2C LCD1602, einen Summer und ein Ultraschallmodul, um ein Rückfahrassistenzsystem zu erstellen. Wir können es auf ein ferngesteuertes Auto setzen, um den tatsächlichen Prozess des Rückwärtsfahrens in eine Garage zu simulieren.
 
 .. image:: img/picow_project.jpg
     :width: 600
     :align: center
 
-**Required Components**
+**Benötigte Komponenten**
 
-In this project, we need the following components.
+Für dieses Projekt benötigen wir folgende Komponenten:
 
 * Raspberry Pi Pico W
 * I2C LCD1602
-* Ultrasonic Module
-* 1k Resistor
+* Ultraschallmodul
+* 1k Widerstand
 * S8050 NPN Transistor
-* Active Buzzer
+* Aktiver Summer
 * |link_breadvolt|
-* 800 Holes Breadboard
-* Jumper Wires
+* 800 Löcher Breadboard
+* Jumperkabel
 
-**Wiring Diagram**
+**Schaltplan**
 
 .. image:: img/picow_ultrasonic.png
     :width: 600
@@ -123,13 +123,13 @@ In this project, we need the following components.
 
         time.sleep_ms(100)
 
-* As soon as the program runs, the ultrasonic sensor will continuously read the distance to the obstacle in front of you, and you will be able to see the exact distance value on the shell.
-* The LED and buzzer will change the frequency of blinking and beeping depending on the distance value, thus indicating the approach of the obstacle.
-* When the ultrasonic sensor works, the program will be paused. To avoid interfering with the LED or buzzer timing, we created a separate thread for ranging in this example.
+* Sobald das Programm läuft, liest der Ultraschallsensor kontinuierlich die Entfernung zum Hindernis vor Ihnen, und Sie können den genauen Entfernungswert auf dem Shell sehen.
+* Die LED und der Summer ändern die Frequenz des Blinkens und Piepens je nach Entfernungswert, was das Nähern eines Hindernisses anzeigt.
+* Wenn der Ultraschallsensor arbeitet, wird das Programm pausiert. Um die Zeitmessung der LED oder des Summers nicht zu stören, haben wir in diesem Beispiel einen separaten Thread für die Entfernungsmessung erstellt.
 
-**Library**
+**Bibliothek**
 
-Here you need to use the library called ``lcd1602.py``. You can create a new code in Thonny, copy the following code into it and then save it to your Raspberry Pi Pico W.
+Hier benötigen Sie die Bibliothek namens ``lcd1602.py``. Sie können in Thonny einen neuen Code erstellen, den folgenden Code hineinkopieren und dann auf Ihrem Raspberry Pi Pico W speichern.
 
 .. code-block:: Python
 

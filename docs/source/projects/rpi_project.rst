@@ -1,43 +1,43 @@
 .. note::
 
-    Hello, welcome to the SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasts Community on Facebook! Dive deeper into Raspberry Pi, Arduino, and ESP32 with fellow enthusiasts.
+    Hallo und willkommen in der SunFounder Raspberry Pi & Arduino & ESP32 Enthusiasten-Gemeinschaft auf Facebook! Tauchen Sie tiefer ein in die Welt von Raspberry Pi, Arduino und ESP32 mit anderen Enthusiasten.
 
-    **Why Join?**
+    **Warum beitreten?**
 
-    - **Expert Support**: Solve post-sale issues and technical challenges with help from our community and team.
-    - **Learn & Share**: Exchange tips and tutorials to enhance your skills.
-    - **Exclusive Previews**: Get early access to new product announcements and sneak peeks.
-    - **Special Discounts**: Enjoy exclusive discounts on our newest products.
-    - **Festive Promotions and Giveaways**: Take part in giveaways and holiday promotions.
+    - **Expertenunterstützung**: Lösen Sie Nachverkaufsprobleme und technische Herausforderungen mit Hilfe unserer Gemeinschaft und unseres Teams.
+    - **Lernen & Teilen**: Tauschen Sie Tipps und Anleitungen aus, um Ihre Fähigkeiten zu verbessern.
+    - **Exklusive Vorschauen**: Erhalten Sie frühzeitigen Zugang zu neuen Produktankündigungen und exklusiven Einblicken.
+    - **Spezialrabatte**: Genießen Sie exklusive Rabatte auf unsere neuesten Produkte.
+    - **Festliche Aktionen und Gewinnspiele**: Nehmen Sie an Gewinnspielen und Feiertagsaktionen teil.
 
-    👉 Ready to explore and create with us? Click [|link_sf_facebook|] and join today!
+    👉 Sind Sie bereit, mit uns zu erkunden und zu erschaffen? Klicken Sie auf [|link_sf_facebook|] und treten Sie heute bei!
 
-Automatic Entrance System with Raspberry Pi
+Automatisches Eingangssystem mit Raspberry Pi
 ====================================================================
 
-In this project, we will use PIR to sense the movement of pedestrians, and use servos, LED, buzzer to simulate the work of the sensor door of the convenience store. When the pedestrian appears within the sensing range of the PIR, the indicator light will be on, the door will be opened, and the buzzer will play the opening bell.
+In diesem Projekt verwenden wir einen PIR-Sensor, um die Bewegung von Fußgängern zu erkennen und mit Servos, LEDs und einem Summer die Funktion einer automatischen Sensortür eines Convenience-Shops zu simulieren. Wenn ein Fußgänger im Erfassungsbereich des PIR-Sensors erscheint, wird das Anzeigelicht aktiviert, die Tür öffnet sich, und der Summer spielt den Öffnungsgong.
 
 .. image:: img/rpi_project.jpg
     :width: 600
     :align: center
 
-**Required Components**
+**Benötigte Komponenten**
 
-In this project, we need the following components.
+Für dieses Projekt benötigen wir folgende Komponenten:
 
 * Raspberry Pi
-* GPIO Extension Board
-* Resistor
+* GPIO-Erweiterungsplatine
+* Widerstand
 * LED
-* PIR Motion Sensor Module
+* PIR-Bewegungssensormodul
 * Servo
-* Buzzer
+* Summer
 * Transistor
 * |link_breadvolt|
-* 800 Holes Breadboard
-* Jumper Wires
+* 800 Löcher Breadboard
+* Jumperkabel
 
-**Wiring Diagram**
+**Schaltplan**
 
 .. image:: img/rpi_welcome.png
     :width: 600
@@ -127,4 +127,4 @@ In this project, we need the following components.
         buzPin.stop()
         ledPin.off()
 
-After the code runs, if the PIR sensor detects someone passing by, the door will automatically open (simulated by the servo), turn on the indicator and play the doorbell music. After the doorbell music plays, the system will automatically close the door and turn off the indicator light, waiting for the next time someone passes by.
+Nachdem der Code ausgeführt wurde, wird die Tür automatisch öffnen (durch den Servo simuliert), das Anzeigelicht einschalten und die Türklingelmusik spielen, wenn der PIR-Sensor jemanden vorbeigehen erkennt. Nachdem die Türklingelmusik gespielt hat, schließt das System automatisch die Tür und schaltet das Anzeigelicht aus, um auf das nächste Vorbeigehen zu warten.
