@@ -94,15 +94,15 @@ rst_epilog = """
     
 .. |link_german_tutorials| raw:: html
 
-    <a href="https://docs.sunfounder.com/projects/breadboard-power-bank/de/latest/" target="_blank">Deutsch Online-Kurs</a>
+    <a href="https://docs.sunfounder.com/projects/breadvolt/de/latest/" target="_blank">Deutsch Online-Kurs</a>
 
 .. |link_jp_tutorials| raw:: html
 
-    <a href="https://docs.sunfounder.com/projects/breadboard-power-bank/ja/latest/" target="_blank">日本語オンライン教材</a>
+    <a href="https://docs.sunfounder.com/projects/breadvolt/ja/latest/" target="_blank">日本語オンライン教材</a>
 
 .. |link_en_tutorials| raw:: html
 
-    <a href="https://docs.sunfounder.com/projects/breadboard-power-bank/en/latest/" target="_blank">English Online-tutorials</a>
+    <a href="https://docs.sunfounder.com/projects/breadvolt/en/latest/" target="_blank">English Online-tutorials</a>
 
 
 .. |link_breadvolt| raw:: html
