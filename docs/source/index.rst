@@ -65,6 +65,7 @@ The BreadVolt is compatible with commonly available breadboards on the market, w
     hardware_introduction
     projects/projects
     downloads
+    faq
 
 
 **Copyright Notice**
