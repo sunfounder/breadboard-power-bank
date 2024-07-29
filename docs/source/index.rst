@@ -47,6 +47,14 @@ SunFounder |link_breadvolt|, Ihre All-in-One-Stromversorgungslösung für Steckb
 * Ein-/Ausschalter verfügbar
 * **Abmessungen**: 52mm x 32mm x 24mm (L x B x H)
 
+**Kompatible Steckbretter**
+
+Der BreadVolt ist kompatibel mit gängigen Steckbrettern auf dem Markt, die eine Breite von 2,13 Zoll haben. Es gibt auch einige Steckbretter, die nicht kompatibel sind, wie im Bild unten gezeigt:
+
+.. image:: img/compitable_breadboard.png
+    :width: 600
+    :align: center
+
 **Inhalt**
 
 .. toctree::
@@ -56,6 +64,7 @@ SunFounder |link_breadvolt|, Ihre All-in-One-Stromversorgungslösung für Steckb
     hardware_introduction
     projects/projects
     downloads
+    faq
 
 **Urheberrechtshinweis**
 
