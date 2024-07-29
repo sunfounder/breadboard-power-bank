@@ -47,6 +47,13 @@ SunFounder |link_breadvolt| は、Arduino、Raspberry Pi、ESP32、Pico Wなど�
 * ON-OFFスイッチ付き
 * **寸法**: 52mm x 32mm x 24mm (L x W x H)
 
+**互換性のあるブレッドボード**
+
+BreadVoltは、市販の一般的なブレッドボードに対応しており、その幅は2.13インチです。以下の画像に示すように、互換性のないブレッドボードもあります：
+
+.. image:: img/compitable_breadboard.png
+    :width: 600
+    :align: center
 
 **目次**
 
@@ -57,6 +64,7 @@ SunFounder |link_breadvolt| は、Arduino、Raspberry Pi、ESP32、Pico Wなど�
     hardware_introduction
     projects/projects
     downloads
+    faq
 
 
 **著作権告知**
